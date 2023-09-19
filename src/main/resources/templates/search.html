@@ -38,7 +38,6 @@
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
     <table th:each="job: ${jobs}" class="job-listing">
-        <tbody>
         <tr>
             <th>ID</th>
             <td th:text="${job.id}"></td>
@@ -63,11 +62,10 @@
             <th>Skill</th>
             <td th:text="${job.coreCompetency}"></td>
         </tr>
-        </tbody>
     </table>
 
 
-    <a th:href="@{/list/jobs(column='all', value=null)}">View All</a>
+<!--    <a th:href="@{/list/jobs(column='all', value=null)}">View All</a>-->
 </div>
 
 </body>
